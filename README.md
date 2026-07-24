@@ -1,4 +1,5 @@
 # Remotion video
+"A Remotion video animation project"
 
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">

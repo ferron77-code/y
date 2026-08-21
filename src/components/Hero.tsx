@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 
+import logo from '../assets/cuba-b459-logo.png'
+
 export interface LinkItem {
   label: string
   href?: string
@@ -58,7 +60,7 @@ export default function Hero({
       <div className="hero__scrim" />
 
       <div className="hero__inner">
-        <img className="hero__logo" src="/cuba-b459-logo.png" alt="Cuba B459" />
+        <img className="hero__logo" src={logo} alt="Cuba B459" />
         <h1 className="hero__title">El Sol De Cuba</h1>
         <p className="hero__tagline">{tagline}</p>
 

@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+
+import logo from '../../assets/cuba-b459-logo.png'
 import Hero, { type LinkItem } from '../../components/Hero'
 import ScrollJourney, { type Chapter } from '../../components/ScrollJourney'
 
@@ -58,7 +60,7 @@ export default function EN() {
     <>
       <header className="nav">
         <a className="nav__mark" href="#top">
-          <img src="/cuba-b459-logo.png" alt="" />
+          <img src={logo} alt="" />
           Cuba B459
         </a>
         <ul className="nav__links">

@@ -16,8 +16,8 @@
   --b459-teal-deep: #1c5b6e;
   --b459-red: #8e2a2a;
   --b459-burgundy: #6b1d22;
-  --b459-display: "Alfa Slab One", Rockwell, Georgia, serif;
-  --b459-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --b459-display: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --b459-body: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -77,7 +77,8 @@ a:hover {
   gap: 0.7rem;
   font-family: var(--b459-display);
   font-size: 1rem;
-  letter-spacing: 0.06em;
+  font-weight: 800;
+  letter-spacing: 0.01em;
   color: var(--b459-paper);
   text-transform: uppercase;
 }
@@ -136,44 +137,15 @@ a:hover {
   background: var(--b459-deep);
 }
 
-.journey__world {
+.journey__poster,
+.journey__film {
   position: absolute;
-  inset: -10%;
-  will-change: transform;
-  background:
-    radial-gradient(120% 80% at 50% 118%, rgba(107, 29, 34, 0.55), transparent 62%),
-    radial-gradient(90% 60% at 12% 6%, rgba(46, 125, 146, 0.32), transparent 60%),
-    linear-gradient(to bottom, #0b0908 0%, #16100d 45%, #241610 78%, #3a2312 100%);
-}
-
-.journey__sun {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: min(78vw, 46rem);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  will-change: transform, opacity;
-  background: radial-gradient(
-    circle,
-    rgba(255, 226, 160, 0.95) 0%,
-    rgba(217, 164, 65, 0.72) 26%,
-    rgba(200, 145, 46, 0.32) 48%,
-    transparent 70%
-  );
-  filter: blur(2px);
-}
-
-.journey__sea {
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 42%;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(28, 91, 110, 0.5) 45%,
-    rgba(11, 9, 8, 0.9) 100%
-  );
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.4s ease;
 }
 
 .journey__grain {
@@ -188,15 +160,20 @@ a:hover {
     );
 }
 
+/* The copy sits on the left, so the film is darkened from the left and along
+   the bottom — enough contrast to read, not enough to bury the footage. */
 .journey__scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(11, 9, 8, 0.94) 0%,
-    rgba(11, 9, 8, 0.62) 46%,
-    rgba(11, 9, 8, 0.25) 100%
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(11, 9, 8, 0.9) 0%,
+      rgba(11, 9, 8, 0.62) 38%,
+      rgba(11, 9, 8, 0.12) 72%,
+      rgba(11, 9, 8, 0.3) 100%
+    ),
+    linear-gradient(to top, rgba(11, 9, 8, 0.72), transparent 34%);
 }
 
 .journey__copy {
@@ -223,8 +200,10 @@ a:hover {
 
 .journey__title {
   font-family: var(--b459-display);
-  font-size: clamp(2.1rem, 6.4vw, 4.4rem);
-  line-height: 1.02;
+  font-size: clamp(2.3rem, 7.2vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
   color: var(--b459-paper);
   margin-bottom: 1.1rem;
   text-wrap: balance;
@@ -297,15 +276,24 @@ a:hover {
     display: none;
   }
   .journey__scrim {
-    background: linear-gradient(to bottom, rgba(11, 9, 8, 0.6), rgba(11, 9, 8, 0.9));
+    background: linear-gradient(
+      to bottom,
+      rgba(11, 9, 8, 0.55) 0%,
+      rgba(11, 9, 8, 0.35) 40%,
+      rgba(11, 9, 8, 0.88) 100%
+    );
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .journey__world,
-  .journey__sun,
   .journey__chapter {
     transform: none !important;
+  }
+  .journey__film {
+    display: none;
+  }
+  .journey__poster {
+    opacity: 1 !important;
   }
 }
 
@@ -327,8 +315,10 @@ a:hover {
 
 .h2 {
   font-family: var(--b459-display);
-  font-size: clamp(1.8rem, 4.6vw, 3.1rem);
-  line-height: 1.08;
+  font-size: clamp(1.9rem, 5vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: -0.038em;
+  line-height: 0.96;
   color: var(--b459-paper);
   margin-bottom: 1.4rem;
   text-wrap: balance;
@@ -344,7 +334,9 @@ a:hover {
 .pull {
   font-family: var(--b459-display);
   font-size: clamp(1.4rem, 3.4vw, 2.4rem);
-  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
   color: var(--b459-gold);
   margin: 0 0 2rem;
   padding-left: clamp(1rem, 2vw, 1.75rem);
@@ -370,7 +362,8 @@ a:hover {
 .neon {
   font-family: var(--b459-display);
   font-size: clamp(1.6rem, 4.4vw, 3rem);
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--b459-red);
   margin-bottom: 1.25rem;
@@ -400,9 +393,10 @@ a:hover {
 .card h3 {
   font-family: var(--b459-display);
   font-size: 1.2rem;
+  font-weight: 800;
   color: var(--b459-gold);
   margin-bottom: 0.7rem;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 
 .card p {
@@ -444,7 +438,9 @@ a:hover {
 .chorus p {
   font-family: var(--b459-display);
   font-size: clamp(1.5rem, 5vw, 3.2rem);
-  line-height: 1.16;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
   color: var(--b459-paper);
 }
 
@@ -457,6 +453,8 @@ a:hover {
 .songline {
   font-family: var(--b459-display);
   font-size: clamp(2rem, 6vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
   color: var(--b459-paper);
   margin-bottom: 0.6rem;
 }
@@ -553,6 +551,7 @@ a:hover {
 .verse h3 {
   font-family: var(--b459-display);
   font-size: 0.95rem;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--b459-teal);

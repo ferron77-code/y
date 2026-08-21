@@ -136,8 +136,8 @@ export default function EN() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia you can dance to.</p>
             <p className="lede">
-              Tony Calatayud is Cuban. A son, a father, a husband, a grandfather.
-              The song carries what that country meant to his family, and it
+              Tony Calatayud is Cuban. A son, a father, a husband. The song
+              carries what that country meant to his family, and it
               carries it the way Cubans carry things: loudly, in good company,
               with the horns up.
             </p>

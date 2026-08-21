@@ -138,8 +138,8 @@ export default function ES() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia que se puede bailar.</p>
             <p className="lede">
-              Tony Calatayud es cubano. Un hijo, un padre, un esposo, un abuelo.
-              La canción carga lo que ese país significó para su familia, y lo
+              Tony Calatayud es cubano. Un hijo, un padre, un esposo. La canción
+              carga lo que ese país significó para su familia, y lo
               carga como cargan las cosas los cubanos: en voz alta, en buena
               compañía, con los metales arriba.
             </p>

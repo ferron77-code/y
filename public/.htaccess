@@ -1,0 +1,58 @@
+# CUBA B459 — Apache config for Hostinger shared hosting.
+# Netlify/Cloudflare read _redirects and _headers; Apache reads this instead.
+
+# ---- SPA routing ----------------------------------------------------------
+# The site is one React bundle with two routes (/ and /en). Any request that is
+# not a real file or folder has to be handed to index.html, or /en 404s when
+# someone opens it directly or hits refresh.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Leave real files and directories alone.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ---- Caching --------------------------------------------------------------
+<IfModule mod_headers.c>
+  # /assets/* filenames carry a content hash, so a changed file is a new URL.
+  # Those are safe to cache forever.
+  SetEnvIf Request_URI "^/assets/" B459_IMMUTABLE
+  Header set Cache-Control "public, max-age=31536000, immutable" env=B459_IMMUTABLE
+
+  # /world/* (the films and posters) sit at fixed names, so they must stay
+  # revalidated — otherwise a re-encode never reaches anyone.
+  SetEnvIf Request_URI "^/world/" B459_REVALIDATE
+  Header set Cache-Control "public, max-age=3600, must-revalidate" env=B459_REVALIDATE
+
+  # index.html must never be cached, or a deploy will not reach a returning
+  # visitor: it is the file that points at every hashed asset.
+  SetEnvIf Request_URI "\.html$" B459_NOCACHE
+  Header set Cache-Control "no-cache, must-revalidate" env=B459_NOCACHE
+</IfModule>
+
+# ---- MIME types -----------------------------------------------------------
+# Older Apache builds do not know these, and a wrong type means the scroll
+# film silently fails to decode.
+<IfModule mod_mime.c>
+  AddType video/mp4   .mp4
+  AddType video/webm  .webm
+  AddType image/webp  .webp
+  AddType font/woff2  .woff2
+</IfModule>
+
+# ---- Compression ----------------------------------------------------------
+# Text compresses well; video and images are already compressed, so skip them.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---- Byte-range requests --------------------------------------------------
+# The scroll journey seeks inside the video file, which needs range support.
+<IfModule mod_headers.c>
+  Header set Accept-Ranges bytes
+</IfModule>

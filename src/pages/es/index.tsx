@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Hero, { type LinkItem } from '../../components/Hero'
 import ScrollJourney, { type Chapter } from '../../components/ScrollJourney'
 
 // The journey keeps the song's own lines: those are the record, not page copy.
@@ -33,6 +34,24 @@ const chapters: Chapter[] = [
   },
 ]
 
+// Streaming links land here as the song goes live on each platform.
+const available: LinkItem[] = [
+  { label: 'Spotify' },
+  { label: 'Apple Music' },
+  { label: 'Amazon Music' },
+  { label: 'YouTube Music' },
+  { label: 'Deezer' },
+]
+
+const follow: LinkItem[] = [
+  { label: 'Instagram', href: 'https://www.instagram.com/cubab459' },
+  { label: 'Facebook', href: 'https://www.facebook.com/CubaB459' },
+  { label: 'Threads' },
+  { label: 'TikTok' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@CubaB459' },
+  { label: 'X' },
+]
+
 export default function ES() {
   return (
     <>
@@ -43,25 +62,38 @@ export default function ES() {
         </a>
         <ul className="nav__links">
           <li><a className="nav__link" href="#movimiento">Movimiento</a></li>
-          <li><a className="nav__link" href="#tony">Tony</a></li>
+          <li><a className="nav__link" href="#equipo">Equipo</a></li>
           <li><a className="nav__link" href="#cancion">Canción</a></li>
           <li><Link to="/en" className="nav__lang">EN</Link></li>
         </ul>
       </header>
 
-      <main id="top">
-        <ScrollJourney chapters={chapters} />
+      <main>
+        <Hero
+          tagline="Libertad. Unidad. Esperanza. Cuba."
+          availableLabel="Disponible en"
+          followLabel="Sigue el movimiento"
+          available={available}
+          follow={follow}
+        />
+
+        <section className="section section--lead" id="apoya">
+          <div className="wrap">
+            <h2 className="h1">Apoya el movimiento</h2>
+            <p className="lede lede--wide">
+              El Sol De Cuba es más que una canción. Es parte de un movimiento
+              cultural en crecimiento que usa la música, las historias, la
+              creatividad y la tecnología para preservar la historia, inspirar a
+              artistas y hacer que una nueva generación piense en el futuro de
+              Cuba.
+            </p>
+          </div>
+        </section>
 
         <section className="section" id="movimiento">
           <div className="wrap">
-            <p className="eyebrow">El lugar</p>
-            <p className="neon">Cuba <span>es</span> Alegría</p>
-            <h2 className="h2">No es una pieza de museo</h2>
-            <p className="lede">
-              Color en cada pared. Música saliendo por las puertas. Una calle que
-              nunca termina de callarse. Esto es una fiesta con memoria larga, y
-              así mismo la escribió Tony.
-            </p>
+            <p className="eyebrow">Sobre Cuba B4 59</p>
+            <h2 className="h2">¿Qué es Cuba B459?</h2>
             <p className="lede">
               Cuba B459 es un movimiento de base con el objetivo de educar a una
               nueva generación sobre la vida en Cuba antes de la Revolución
@@ -95,21 +127,13 @@ export default function ES() {
                 </p>
               </div>
             </div>
-            <hr className="rule" />
           </div>
-        </section>
-
-        <section className="chorus">
-          <p>Yo quiero el sol de Cuba</p>
-          <p>brillando pa' mi gente</p>
-          <p>Yo quiero libertad</p>
-          <p>de oriente a occidente</p>
         </section>
 
         <section className="section" id="tony">
           <div className="wrap">
-            <p className="eyebrow">El autor</p>
-            <h2 className="h2">Tony Calatayud escribió esta</h2>
+            <p className="eyebrow">Sobre el autor</p>
+            <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia que se puede bailar.</p>
             <p className="lede">
               Tony Calatayud es cubano. Un hijo, un padre, un esposo, un abuelo.
@@ -126,26 +150,89 @@ export default function ES() {
 
         <section className="section" id="equipo">
           <div className="wrap">
-            <p className="eyebrow">Quiénes somos</p>
+            <p className="eyebrow">Sobre el equipo</p>
             <h2 className="h2">El equipo</h2>
             <div className="grid-3">
               <div className="card">
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Productor Digital</p>
-                <p>Placeholder</p>
+                <p>
+                  Responsable de la producción digital, la tecnología creativa y
+                  el desarrollo de los medios digitales del proyecto.
+                </p>
               </div>
               <div className="card card--teal">
                 <h3>Pedro Hernández</h3>
                 <p className="card__role">Productor de Redes Sociales</p>
-                <p>Placeholder</p>
+                <p>
+                  Pedro Hernández es productor musical, compositor, productor de
+                  radio y televisión, y empresario, con experiencia trabajando
+                  junto a grandes artistas. Como ejecutivo creativo y
+                  publicitario, une música, medios, mercadeo y entretenimiento
+                  para desarrollar proyectos de impacto en múltiples plataformas.
+                </p>
               </div>
               <div className="card card--red">
                 <h3>Julio Rodríguez</h3>
                 <p className="card__role">Productor Ejecutivo</p>
-                <p>Placeholder</p>
+                <p>
+                  Responsable de la gestión del proyecto, la coordinación de
+                  producción y la unión de la visión creativa del proyecto.
+                </p>
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="section" id="canciones">
+          <div className="wrap">
+            <p className="eyebrow">El catálogo</p>
+            <h2 className="h2">Las canciones</h2>
+            <p className="lede">
+              La música de El Sol De Cuba trae la historia, la cultura, la lucha,
+              la esperanza y el espíritu de Cuba a una nueva generación.
+            </p>
+            <div className="grid-3">
+              <a className="card card--link" href="#cancion">
+                <h3>El Sol De Cuba</h3>
+                <p className="card__role">Disponible ahora</p>
+                <p>La canción que enciende el movimiento.</p>
+              </a>
+              <div className="card card--teal">
+                <h3>El Tiempo Ha Llegado</h3>
+                <p className="card__role">Próximamente</p>
+                <p>Nueva música en camino.</p>
+              </div>
+              <div className="card card--red">
+                <h3>Cuba Baila</h3>
+                <p className="card__role">Próximamente</p>
+                <p>La celebración continúa.</p>
+              </div>
+            </div>
+            <hr className="rule" />
+          </div>
+        </section>
+
+        <ScrollJourney chapters={chapters} />
+
+        <section className="section" id="lugar">
+          <div className="wrap">
+            <p className="eyebrow">El lugar</p>
+            <p className="neon">Cuba <span>es</span> Alegría</p>
+            <h2 className="h2">No es una pieza de museo</h2>
+            <p className="lede">
+              Color en cada pared. Música saliendo por las puertas. Una calle que
+              nunca termina de callarse. Esto es una fiesta con memoria larga, y
+              así mismo la escribió Tony.
+            </p>
+          </div>
+        </section>
+
+        <section className="chorus">
+          <p>Yo quiero el sol de Cuba</p>
+          <p>brillando pa' mi gente</p>
+          <p>Yo quiero libertad</p>
+          <p>de oriente a occidente</p>
         </section>
 
         <section className="section" id="ideas">
@@ -195,39 +282,9 @@ export default function ES() {
 
             <p className="eyebrow" style={{ marginTop: '3rem' }}>Escúchala en</p>
             <div className="chips">
-              <span className="btn btn--muted">Spotify</span>
-              <span className="btn btn--muted">Apple Music</span>
-              <span className="btn btn--muted">Amazon Music</span>
-              <span className="btn btn--muted">YouTube Music</span>
-              <span className="btn btn--muted">Deezer</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="section" id="canciones">
-          <div className="wrap">
-            <p className="eyebrow">El catálogo</p>
-            <h2 className="h2">Las canciones</h2>
-            <p className="lede">
-              La música de El Sol De Cuba trae la historia, la cultura, la lucha,
-              la esperanza y el espíritu de Cuba a una nueva generación.
-            </p>
-            <div className="grid-3">
-              <div className="card">
-                <h3>El Sol De Cuba</h3>
-                <p className="card__role">Disponible ahora</p>
-                <p>La canción que enciende el movimiento.</p>
-              </div>
-              <div className="card card--teal">
-                <h3>El Tiempo Ha Llegado</h3>
-                <p className="card__role">Próximamente</p>
-                <p>Nueva música en camino.</p>
-              </div>
-              <div className="card card--red">
-                <h3>Cuba Baila</h3>
-                <p className="card__role">Próximamente</p>
-                <p>La celebración continúa.</p>
-              </div>
+              {available.map((item) => (
+                <span key={item.label} className="chip chip--pending">{item.label}</span>
+              ))}
             </div>
           </div>
         </section>
@@ -274,12 +331,15 @@ Cuba es corazón`}</p>
             <p className="eyebrow">El movimiento</p>
             <h2 className="h2">Síguenos</h2>
             <div className="chips">
-              <a className="btn" href="https://www.instagram.com/cubab459" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a className="btn" href="https://www.facebook.com/CubaB459" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a className="btn" href="https://www.youtube.com/@CubaB459" target="_blank" rel="noopener noreferrer">YouTube</a>
-              <span className="btn btn--muted">Threads</span>
-              <span className="btn btn--muted">TikTok</span>
-              <span className="btn btn--muted">X</span>
+              {follow.map((item) =>
+                item.href ? (
+                  <a key={item.label} className="chip" href={item.href} target="_blank" rel="noopener noreferrer">
+                    {item.label}
+                  </a>
+                ) : (
+                  <span key={item.label} className="chip chip--pending">{item.label}</span>
+                ),
+              )}
             </div>
           </div>
         </section>

@@ -138,14 +138,27 @@ export default function ES() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia que se puede bailar.</p>
             <p className="lede">
-              Tony Calatayud es cubano. Un hijo, un padre, un esposo. La canción
-              carga lo que ese país significó para su familia, y lo
-              carga como cargan las cosas los cubanos: en voz alta, en buena
-              compañía, con los metales arriba.
+              Tony Calatayud nació en Miami, de ascendencia cubana, y anhela ver
+              una Cuba libre de las ataduras opresivas del comunismo. Sus padres
+              emigraron de Cuba en 1960, tras la Revolución Cubana. Creció
+              escuchando las historias de su familia sobre la isla antes de 1959
+              y su deseo de volver pronto a ella.
             </p>
             <p className="lede">
-              Lo que espera es simple y no es poco: que Cuba llegue a ser una
-              democracia. B459 se lee <i>Before 59</i> — la Cuba de antes de 1959.
+              La generación de sus padres no llegó a verlo. A través de su
+              música, Tony busca inspirar a la próxima generación a continuar la
+              lucha por la libertad de Cuba.
+            </p>
+            <p className="lede">
+              Es un ejecutivo de medios con casi treinta años en la radio: ha
+              lanzado veinticuatro emisoras y una compañía de capital de riesgo.
+              También es compositor y creador de Cuba B459, un grupo de música
+              latina con énfasis en el género de Liberación Cubana — el grupo
+              detrás de <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i>,{' '}
+              <i>Cuba Baila</i> y <i>Cuba Canta</i>.
+            </p>
+            <p className="lede">
+              B459 se lee <i>Before 59</i> — la Cuba de antes de 1959.
             </p>
           </div>
         </section>
@@ -209,6 +222,11 @@ export default function ES() {
                 <h3>Cuba Baila</h3>
                 <p className="card__role">Próximamente</p>
                 <p>La celebración continúa.</p>
+              </div>
+              <div className="card">
+                <h3>Cuba Canta</h3>
+                <p className="card__role">Próximamente</p>
+                <p>La isla encuentra su voz.</p>
               </div>
             </div>
             <hr className="rule" />

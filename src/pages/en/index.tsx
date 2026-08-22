@@ -136,15 +136,27 @@ export default function EN() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia you can dance to.</p>
             <p className="lede">
-              Tony Calatayud is Cuban. A son, a father, a husband. The song
-              carries what that country meant to his family, and it
-              carries it the way Cubans carry things: loudly, in good company,
-              with the horns up.
+              Tony Calatayud is a Miami native of Cuban descent who yearns to
+              see a Cuba free from the oppressive bonds of communism. His parents
+              emigrated from Cuba in 1960, following the Cuban Revolution. He
+              grew up on his family's stories of the island before 1959 and
+              their desire to return to it soon.
             </p>
             <p className="lede">
-              What it hopes for is simple and not small: that Cuba becomes a
-              democracy. B459 reads as <i>Before 59</i> — Cuba as it was before
-              1959.
+              His parents' generation did not see that come to pass. Through his
+              music, Tony means to inspire the next generation to continue the
+              fight for Cuba's freedom.
+            </p>
+            <p className="lede">
+              He is a media executive with almost thirty years in radio, having
+              launched twenty-four stations and a venture funding company. He is
+              also a songwriter and the creator of Cuba B459, a group working in
+              Latin music with an emphasis on the Cuban Liberation genre — the
+              group behind <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i>,{' '}
+              <i>Cuba Baila</i> and <i>Cuba Canta</i>.
+            </p>
+            <p className="lede">
+              B459 reads as <i>Before 59</i> — Cuba as it was before 1959.
             </p>
           </div>
         </section>
@@ -208,6 +220,11 @@ export default function EN() {
                 <h3>Cuba Baila</h3>
                 <p className="card__role">Coming soon</p>
                 <p>The celebration continues.</p>
+              </div>
+              <div className="card">
+                <h3>Cuba Canta</h3>
+                <p className="card__role">Coming soon</p>
+                <p>The island finds its voice.</p>
               </div>
             </div>
             <hr className="rule" />

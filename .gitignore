@@ -5,3 +5,6 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Built bundle, rebuilt on demand — not source.
+cuba-b459-site.zip

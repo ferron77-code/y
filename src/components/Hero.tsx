@@ -2,6 +2,8 @@ import type { ReactNode } from 'react'
 
 import logo from '../assets/cuba-b459-logo.png'
 
+const BASE = import.meta.env.BASE_URL
+
 export interface LinkItem {
   label: string
   href?: string
@@ -43,7 +45,7 @@ export default function Hero({
     <section className="hero" id="top">
       <video
         className="hero__film"
-        poster="/world/hero-poster.jpg"
+        poster={`${BASE}world/hero-poster.jpg`}
         autoPlay
         muted
         loop
@@ -52,10 +54,10 @@ export default function Hero({
         aria-hidden="true"
         tabIndex={-1}
       >
-        <source src="/world/hero.webm" type="video/webm" media="(min-width: 861px)" />
-        <source src="/world/hero.mp4" type="video/mp4" media="(min-width: 861px)" />
-        <source src="/world/hero-mobile.webm" type="video/webm" />
-        <source src="/world/hero-mobile.mp4" type="video/mp4" />
+        <source src={`${BASE}world/hero.webm`} type="video/webm" media="(min-width: 861px)" />
+        <source src={`${BASE}world/hero.mp4`} type="video/mp4" media="(min-width: 861px)" />
+        <source src={`${BASE}world/hero-mobile.webm`} type="video/webm" />
+        <source src={`${BASE}world/hero-mobile.mp4`} type="video/mp4" />
       </video>
       <div className="hero__scrim" />
 

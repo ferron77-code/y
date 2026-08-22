@@ -8,8 +8,11 @@ export interface Chapter {
   body: string
 }
 
-const DESKTOP_POSTER = '/world/journey-poster.jpg'
-const MOBILE_POSTER = '/world/journey-mobile-poster.jpg'
+// Deploy target decides the base ("/" on Hostinger, "/y/" on GitHub Pages),
+// so every runtime asset url is built from it rather than hard-coded.
+const BASE = import.meta.env.BASE_URL
+const DESKTOP_POSTER = `${BASE}world/journey-poster.jpg`
+const MOBILE_POSTER = `${BASE}world/journey-mobile-poster.jpg`
 
 /**
  * VP9 is smaller at equal quality and every Chromium/Firefox build takes it;
@@ -19,7 +22,7 @@ const MOBILE_POSTER = '/world/journey-mobile-poster.jpg'
 function pickClip(mobile: boolean) {
   const probe = document.createElement('video')
   const webm = probe.canPlayType('video/webm; codecs="vp9"')
-  const stem = mobile ? '/world/journey-mobile' : '/world/journey'
+  const stem = `${BASE}world/${mobile ? 'journey-mobile' : 'journey'}`
   return webm === 'probably' || webm === 'maybe' ? `${stem}.webm` : `${stem}.mp4`
 }
 

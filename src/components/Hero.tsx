@@ -62,8 +62,11 @@ export default function Hero({
       <div className="hero__scrim" />
 
       <div className="hero__inner">
-        <img className="hero__logo" src={logo} alt="Cuba B459" />
-        <h1 className="hero__title">El Sol De Cuba</h1>
+        {/* The mark IS the wordmark, so it carries the page heading rather than
+            repeating it in type underneath. */}
+        <h1 className="hero__mark">
+          <img className="hero__logo" src={logo} alt="Cuba B459 — El Sol De Cuba" />
+        </h1>
         <p className="hero__tagline">{tagline}</p>
 
         <div className="hero__row">

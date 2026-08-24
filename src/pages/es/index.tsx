@@ -58,9 +58,8 @@ export default function ES() {
   return (
     <>
       <header className="nav">
-        <a className="nav__mark" href="#top">
+        <a className="nav__mark" href="#top" aria-label="Cuba B459 — top">
           <img src={logo} alt="" />
-          Cuba B459
         </a>
         <ul className="nav__links">
           <li><a className="nav__link" href="#movimiento">Movimiento</a></li>
@@ -72,7 +71,7 @@ export default function ES() {
 
       <main>
         <Hero
-          tagline="Libertad. Unidad. Esperanza. Cuba."
+          tagline="Libertad. Unidad. Esperanza."
           availableLabel="Disponible en"
           followLabel="Sigue el movimiento"
           available={available}
@@ -116,15 +115,14 @@ export default function ES() {
               <div className="card card--teal">
                 <h3>Crear</h3>
                 <p>
-                  Inspirar a una nueva generación de artistas a usar la música,
-                  la creatividad y la IA para avanzar el género de Liberación
-                  Cubana.
+                  Inspirar una nueva generación de artistas utilizando los
+                  medios de IA para avanzar el género de Liberación Cubana.
                 </p>
               </div>
               <div className="card card--red">
                 <h3>Inspirar</h3>
                 <p>
-                  Motivar a los jóvenes a aprender de la historia y buscar
+                  Motivar la juventud que aprenda de su historia y provocar
                   cambios políticos, económicos y sociales en Cuba.
                 </p>
               </div>

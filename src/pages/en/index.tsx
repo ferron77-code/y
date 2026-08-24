@@ -59,9 +59,8 @@ export default function EN() {
   return (
     <>
       <header className="nav">
-        <a className="nav__mark" href="#top">
+        <a className="nav__mark" href="#top" aria-label="Cuba B459 — top">
           <img src={logo} alt="" />
-          Cuba B459
         </a>
         <ul className="nav__links">
           <li><a className="nav__link" href="#movement">Movement</a></li>
@@ -73,7 +72,7 @@ export default function EN() {
 
       <main>
         <Hero
-          tagline="Freedom. Unity. Hope. Cuba."
+          tagline="Freedom. Unity. Hope."
           availableLabel="Available on"
           followLabel="Follow the movement"
           available={available}
@@ -115,15 +114,15 @@ export default function EN() {
               <div className="card card--teal">
                 <h3>Create</h3>
                 <p>
-                  Inspire a new generation of artists to use music, creativity,
-                  and AI technology to advance the Cuban Liberation genre.
+                  Inspire a new generation of artists using AI media to advance
+                  the Cuban Liberation genre.
                 </p>
               </div>
               <div className="card card--red">
                 <h3>Inspire</h3>
                 <p>
-                  Motivate young people to learn from history and seek political,
-                  economic, and social change in Cuba.
+                  Motivate young people to learn from their history and provoke
+                  political, economic, and social change in Cuba.
                 </p>
               </div>
             </div>

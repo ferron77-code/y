@@ -208,7 +208,7 @@ export default function EN() {
             <div className="grid-3">
               <a className="card card--link" href="#song">
                 <h3>El Sol De Cuba</h3>
-                <p className="card__role">Available now</p>
+                <p className="card__role card__role--date">Out 14 September</p>
                 <p>The song that lights the movement.</p>
               </a>
               <div className="card card--teal">
@@ -274,6 +274,9 @@ export default function EN() {
             <p className="songline">El Sol De Cuba</p>
             <p className="billing">
               CUBA B459 featuring <b>Tony Calatayud</b>
+            </p>
+            <p className="release">
+              Everywhere <b>14 September</b>
             </p>
             <div className="player">
               <iframe

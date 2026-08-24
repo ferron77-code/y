@@ -772,3 +772,25 @@ a:hover {
     gap: 1rem;
   }
 }
+
+/* ---- release date -------------------------------------------------------- */
+
+/* The date is the news right now, so it reads louder than the billing above it. */
+.release {
+  font-family: var(--b459-display);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--b459-gold);
+  margin: -1rem 0 2rem;
+}
+
+.release b {
+  color: var(--b459-paper);
+  font-weight: 800;
+}
+
+.card__role--date {
+  color: var(--b459-gold);
+}

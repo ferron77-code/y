@@ -169,8 +169,20 @@ export default function ES() {
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Productor Digital</p>
                 <p>
-                  Responsable de la producción digital, la tecnología creativa y
-                  el desarrollo de los medios digitales del proyecto.
+                  Ferron Hartshorn graba bajo el nombre de Fyaron. Compositor,
+                  autor y artista desde 1997, ha escrito e interpretado música en
+                  Tanzania, Japón, Italia, Vietnam, Camboya y Canadá. Su canción
+                  patriótica «Belize, Belize» quedó en tercer lugar en el
+                  concurso nacional de ese país en 2010, y sus videos «Keep Me
+                  From Sin» y «See The Light» reunieron a artistas beliceños
+                  entre el reggae, el hip hop y la palabra hablada.
+                </p>
+                <p>
+                  Hoy crea álbumes con IA — las mismas herramientas que este
+                  movimiento le pide a una nueva generación de artistas — y graba
+                  y publica el trabajo de otros. En Cuba B459 lleva la producción
+                  digital: el sitio, las películas y todo lo que el movimiento
+                  pone frente al público.
                 </p>
               </div>
               <div className="card card--teal">

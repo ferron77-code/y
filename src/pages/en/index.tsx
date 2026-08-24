@@ -168,8 +168,20 @@ export default function EN() {
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Digital Producer</p>
                 <p>
-                  Responsible for the digital production, creative technology,
-                  and development of the project's digital media.
+                  Ferron Hartshorn records as Fyaron. A songwriter, composer and
+                  recording artist since 1997, he has written and performed in
+                  Tanzania, Japan, Italy, Vietnam, Cambodia and Canada. His
+                  patriotic song "Belize, Belize" placed third in that country's
+                  national competition in 2010, and his videos "Keep Me From
+                  Sin" and "See The Light" brought Belizean artists together
+                  across reggae, hip hop and spoken word.
+                </p>
+                <p>
+                  He now builds albums with AI — the same tools this movement
+                  asks a new generation of artists to pick up — and records and
+                  releases other artists' work. On Cuba B459 he handles the
+                  digital production: the site, the films, and everything the
+                  movement puts in front of people.
                 </p>
               </div>
               <div className="card card--teal">

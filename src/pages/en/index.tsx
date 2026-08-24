@@ -93,7 +93,7 @@ export default function EN() {
 
         <section className="section" id="movement">
           <div className="wrap">
-            <p className="eyebrow">About Cuba B4 59</p>
+            <p className="eyebrow">About Cuba B459</p>
             <h2 className="h2">What is Cuba B459?</h2>
             <p className="lede">
               Cuba B459 is a grassroots movement with the goal of educating a new
@@ -148,8 +148,8 @@ export default function EN() {
               Tony is a successful media executive with almost 30 years in the
               radio industry. He's launched 24 radio stations and a venture
               funding company. He is also a songwriter and creator of the
-              musical group "Cuba B4 59," focused on Latin music with an
-              emphasis on the Cuban Liberation genre. Cuba B4 59 has produced
+              musical group "Cuba B459," focused on Latin music with an
+              emphasis on the Cuban Liberation genre. Cuba B459 has produced
               vibrant songs such as "El Tiempo Ha Llegado," "El Sol de Cuba,"
               and "Cuba Baila, Cuba Canta."
             </p>

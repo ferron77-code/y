@@ -93,7 +93,7 @@ export default function ES() {
 
         <section className="section" id="movimiento">
           <div className="wrap">
-            <p className="eyebrow">Sobre Cuba B4 59</p>
+            <p className="eyebrow">Sobre Cuba B459</p>
             <h2 className="h2">¿Qué es Cuba B459?</h2>
             <p className="lede">
               Cuba B459 es un movimiento de base con el objetivo de educar a una
@@ -148,9 +148,9 @@ export default function ES() {
             <p className="lede">
               Tony es un ejecutivo de medios con casi 30 años en la industria de
               la radio. Ha lanzado 24 emisoras y una compañía de capital de
-              riesgo. También es compositor y creador del grupo musical «Cuba B4
-              59», enfocado en la música latina con énfasis en el género de
-              Liberación Cubana. Cuba B4 59 ha producido canciones vibrantes
+              riesgo. También es compositor y creador del grupo musical «Cuba
+              B459», enfocado en la música latina con énfasis en el género de
+              Liberación Cubana. Cuba B459 ha producido canciones vibrantes
               como «El Tiempo Ha Llegado», «El Sol de Cuba» y «Cuba Baila, Cuba
               Canta».
             </p>

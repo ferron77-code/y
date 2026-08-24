@@ -169,13 +169,16 @@ export default function ES() {
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Productor Digital</p>
                 <p>
-                  Ferron Hartshorn graba bajo el nombre de Fyaron. Compositor,
-                  autor y artista desde 1997, ha escrito e interpretado música en
-                  Tanzania, Japón, Italia, Vietnam, Camboya y Canadá. Su canción
-                  patriótica «Belize, Belize» quedó en tercer lugar en el
-                  concurso nacional de ese país en 2010, y sus videos «Keep Me
-                  From Sin» y «See The Light» reunieron a artistas beliceños
-                  entre el reggae, el hip hop y la palabra hablada.
+                  Ferron Hartshorn graba bajo el nombre de Fyaron. Su música
+                  comenzó en 1997 en un viaje misionero a Tanzania, donde grabó
+                  su primera canción internacional para la radio. El ministerio
+                  lo llevó después a Italia, Canadá, Vietnam y Camboya, y a
+                  Japón, donde vivió e hizo la mayor parte de sus
+                  presentaciones. En 2010 su canción patriótica «Belize, Belize»
+                  quedó en tercer lugar en el concurso nacional de ese país, y
+                  sus videos «Keep Me From Sin» y «See The Light» reunieron a
+                  artistas beliceños entre el reggae, el hip hop y la palabra
+                  hablada.
                 </p>
                 <p>
                   Hoy crea álbumes con IA — las mismas herramientas que este

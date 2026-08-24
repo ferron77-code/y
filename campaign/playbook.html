@@ -1,0 +1,727 @@
+<title>El Movimiento Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+
+<style>
+  /* Palette is the movement's own production sheet: mustard gold, deep teal,
+     dark burgundy, ivory, on a warm near-black. Neutrals are biased warm so
+     they read as chosen rather than inherited. */
+  :root {
+    --gold: #b8842a;
+    --gold-bright: #d9a441;
+    --teal: #2e7d92;
+    --burgundy: #6b1d22;
+
+    --ground: #f7f4ec;
+    --raised: #fffdf8;
+    --sunken: #efe9db;
+    --ink: #1a1512;
+    --ink-soft: #5c5248;
+    --ink-faint: #8b8074;
+    --rule: #ddd4c2;
+    --rule-strong: #c3b8a2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --gold: #d9a441;
+      --gold-bright: #e8bc65;
+      --teal: #5aa6ba;
+      --burgundy: #b84a4a;
+
+      --ground: #141010;
+      --raised: #1e1917;
+      --sunken: #0d0a09;
+      --ink: #f2ede4;
+      --ink-soft: #b5aa9c;
+      --ink-faint: #837a6e;
+      --rule: #322a26;
+      --rule-strong: #4a3f38;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --gold: #d9a441;
+    --gold-bright: #e8bc65;
+    --teal: #5aa6ba;
+    --burgundy: #b84a4a;
+
+    --ground: #141010;
+    --raised: #1e1917;
+    --sunken: #0d0a09;
+    --ink: #f2ede4;
+    --ink-soft: #b5aa9c;
+    --ink-faint: #837a6e;
+    --rule: #322a26;
+    --rule-strong: #4a3f38;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.5rem); }
+  .measure { max-width: 63ch; }
+
+  h1, h2, h3, h4, .label, .num, th, .btn {
+    font-family: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+
+  /* ---- masthead ---------------------------------------------------- */
+
+  header.masthead {
+    border-bottom: 2px solid var(--ink);
+    padding: clamp(2.5rem, 7vw, 4.5rem) 0 clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .eyebrow-row {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
+    align-items: baseline; margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 7.5vw, 4.6rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    margin: 0 0 1.1rem;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-size: clamp(1.1rem, 2.3vw, 1.4rem);
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin: 0;
+  }
+
+  .tricolour {
+    height: 3px; margin-top: 2rem;
+    background: linear-gradient(to right,
+      var(--gold) 0 33%, var(--teal) 33% 66%, var(--burgundy) 66% 100%);
+  }
+
+  /* ---- sections ---------------------------------------------------- */
+
+  section { padding: clamp(2.75rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 0; }
+
+  h2 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    margin: 0.6rem 0 1.1rem;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.45rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; color: var(--ink); }
+  em { font-style: italic; }
+
+  a { color: var(--gold); text-underline-offset: 0.15em; }
+  a:focus-visible, .btn:focus-visible {
+    outline: 2px solid var(--teal); outline-offset: 3px;
+  }
+
+  /* ---- the thesis callout ------------------------------------------ */
+
+  .thesis {
+    background: var(--sunken);
+    border-left: 4px solid var(--gold);
+    padding: clamp(1.3rem, 3.5vw, 2rem);
+    margin: 1.75rem 0;
+  }
+
+  .thesis p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: clamp(1.15rem, 2.6vw, 1.55rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.24;
+    color: var(--ink);
+    max-width: 34ch;
+  }
+
+  /* ---- generic card grid ------------------------------------------- */
+
+  .grid {
+    display: grid; gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+    margin-top: 1.75rem;
+  }
+
+  .card {
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--gold);
+    padding: 1.25rem 1.2rem;
+  }
+  .card.t-teal { border-top-color: var(--teal); }
+  .card.t-burg { border-top-color: var(--burgundy); }
+
+  .card p { font-size: 0.97rem; color: var(--ink-soft); }
+
+  .card .reach {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-faint); margin-bottom: 0.7rem;
+  }
+
+  /* ---- phases: a real sequence, so it is numbered ------------------- */
+
+  .phase {
+    display: grid;
+    grid-template-columns: 3.4rem 1fr;
+    gap: 0 1.25rem;
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .phase:last-child { border-bottom: 1px solid var(--rule); }
+
+  .num {
+    font-size: 2.1rem; font-weight: 900;
+    letter-spacing: -0.05em; line-height: 1;
+    color: var(--gold); font-variant-numeric: tabular-nums;
+  }
+
+  .when {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-faint); margin-top: 0.3rem;
+  }
+
+  .phase ul { margin: 0.6rem 0 0; padding-left: 1.1rem; }
+  .phase li { margin-bottom: 0.35rem; color: var(--ink-soft); }
+
+  /* ---- tables ------------------------------------------------------- */
+
+  .scroller { overflow-x: auto; margin-top: 1.6rem; }
+
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; }
+
+  th {
+    text-align: left; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-faint);
+    padding: 0 0.9rem 0.55rem 0;
+    border-bottom: 2px solid var(--rule-strong);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.7rem 0.9rem 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.97rem;
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  td:first-child { color: var(--ink); font-weight: 500; white-space: nowrap; }
+  td.date { font-variant-numeric: tabular-nums; }
+
+  .flag {
+    display: inline-block;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 0.66rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.15rem 0.45rem;
+    border: 1px solid var(--gold); color: var(--gold);
+    white-space: nowrap;
+  }
+
+  /* ---- the engine flow ---------------------------------------------- */
+
+  .engine {
+    display: grid; gap: 0.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    margin-top: 1.6rem;
+  }
+
+  .out {
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    padding: 0.85rem 0.95rem;
+  }
+
+  .out .qty {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 1.5rem; font-weight: 900; letter-spacing: -0.04em;
+    color: var(--teal); font-variant-numeric: tabular-nums;
+    display: block; line-height: 1;
+  }
+
+  .out span.what {
+    font-size: 0.9rem; color: var(--ink-soft);
+    display: block; margin-top: 0.3rem;
+  }
+
+  /* ---- scripts ------------------------------------------------------ */
+
+  .script {
+    background: var(--sunken);
+    border: 1px solid var(--rule);
+    padding: 1.15rem 1.2rem;
+    margin-top: 1rem;
+    font-size: 0.97rem;
+  }
+
+  .script .who {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 0.7rem;
+  }
+
+  .script p { margin-bottom: 0.75rem; }
+  .script .fill { color: var(--gold); font-weight: 600; font-style: normal; }
+
+  /* ---- guardrails --------------------------------------------------- */
+
+  .guard {
+    border-left: 4px solid var(--burgundy);
+    background: var(--raised);
+    padding: 1.1rem 1.2rem;
+    margin-top: 1rem;
+  }
+  .guard h3 { color: var(--burgundy); }
+  .guard p { font-size: 0.97rem; color: var(--ink-soft); margin: 0; }
+
+  footer {
+    padding: 2.5rem 0 3.5rem;
+    border-top: 2px solid var(--ink);
+    color: var(--ink-faint);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 34rem) {
+    .phase { grid-template-columns: 1fr; gap: 0.2rem; }
+    .num { font-size: 1.5rem; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow-row">
+      <span class="label">Cuba B459</span>
+      <span class="label" style="color:var(--ink-faint)">Campaign Playbook · 990 AM Miami</span>
+    </div>
+    <h1>El Movimiento</h1>
+    <p class="standfirst">
+      Turning a licensed Miami signal into a podcast, and a podcast into a
+      coalition.
+    </p>
+    <div class="tricolour"></div>
+  </header>
+
+  <section>
+    <span class="label">The unfair advantage</span>
+    <h2>You already own the hard part</h2>
+    <div class="measure">
+      <p>
+        Almost every podcast launches into silence. It has no audience, no
+        distribution, and no reason for a guest to say yes. It spends its first
+        year begging for both.
+      </p>
+      <div class="thesis">
+        <p>You are not launching a podcast. You are converting a broadcast audience into a movement.</p>
+      </div>
+      <p>
+        990 AM is a licensed signal in the largest Cuban-American market in the
+        United States, and Tony owns it. That single fact rewrites the entire
+        strategy, because it changes what you are asking people for. You are not
+        asking an influencer to promote your band. You are offering them a slot
+        on real radio.
+      </p>
+      <p>
+        That is a rare thing to be able to give away, and it is the whole engine
+        of what follows. Everything in this plan runs on it.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">The exchange</span>
+    <h2>Why they say yes</h2>
+    <div class="measure">
+      <p>
+        Stop thinking of this as influencer marketing. Think of it as booking.
+        The ask is <em>come on the show</em> — and the promotion follows on its
+        own, because guests share their own appearances without being asked. A
+        booking is a gift; a promo request is a favour. Only one of them scales.
+      </p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="reach">You give</div>
+        <h3>A broadcast slot</h3>
+        <p>Airtime on an FCC-licensed Miami station. Not a Zoom call posted to YouTube — actual radio, which still carries weight with this audience and their parents.</p>
+      </div>
+      <div class="card t-teal">
+        <div class="reach">You give</div>
+        <h3>Assets they own</h3>
+        <p>A produced episode plus cut vertical clips, handed over. Most guests leave a podcast with nothing they can post. Yours leave with a week of content.</p>
+      </div>
+      <div class="card t-burg">
+        <div class="reach">You get</div>
+        <h3>Their audience, once</h3>
+        <p>They post the episode because it flatters them to. No contract, no fee. Track it — the share rate is the number that tells you if the show is worth their time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Format</span>
+    <h2>Three segments, built from the brand</h2>
+    <div class="measure">
+      <p>
+        The name already contains the structure. <strong>B459 is a date</strong>
+        — before and after. Build the show on it so the format teaches the brand
+        every single episode.
+      </p>
+    </div>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Segment</th><th>Runs</th><th>The question</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Antes</td><td class="date">10–12 min</td>
+            <td>The guest's Cuba — family story, what was lost, what got carried out. This is the archive the movement exists to build.</td>
+          </tr>
+          <tr>
+            <td>Ahora</td><td class="date">15–18 min</td>
+            <td>What they are working on now. This is their payment: uninterrupted time to talk about their own project.</td>
+          </tr>
+          <tr>
+            <td>Después</td><td class="date">6–8 min</td>
+            <td>One concrete thing the next generation should do. Short, quotable, and the natural clip.</td>
+          </tr>
+          <tr>
+            <td>Cierre</td><td class="date">3–4 min</td>
+            <td>Close on a track from the catalogue. The music is the outro, never an ad read — that is how it becomes part of the show instead of an interruption.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="measure" style="margin-top:1.5rem">
+      <p>
+        Record bilingual. Tony's radio audience skews Spanish-dominant; the
+        generation you are trying to reach is English-dominant. A show that only
+        picks one is throwing away half the reason it exists.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Sequence</span>
+    <h2>The launch, in four phases</h2>
+    <div class="measure">
+      <p>
+        These are ordered because the order matters. Phase 2 fails without Phase
+        1's inventory, and Phase 3 has nothing to prove without Phase 2's
+        numbers.
+      </p>
+    </div>
+
+    <div class="phase">
+      <div><span class="num">01</span></div>
+      <div>
+        <h3>Foundation</h3>
+        <div class="when">Four weeks before launch</div>
+        <ul>
+          <li>Site live on the real domain, streaming links in, socials claimed on every platform in the follow row.</li>
+          <li>Press kit: Tony's bio, show description, cover art, three sample questions, technical requirements. One PDF, one link.</li>
+          <li><strong>Start Meta advertiser verification now.</strong> Cuba policy is classed as social-issue advertising and verification takes days — begin it before you need it, not when a launch ad is waiting.</li>
+          <li>Book the first ten guests from Tony's own network. Thirty years and twenty-four stations is a rolodex most shows would kill for. Cold outreach comes later.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div><span class="num">02</span></div>
+      <div>
+        <h3>Record in the dark</h3>
+        <div class="when">Weeks 1–4 · nothing published yet</div>
+        <ul>
+          <li>Record six episodes before releasing a single one. Resist publishing early.</li>
+          <li>Two reasons: the format will be wrong in episode one and you want to fix it before anyone hears it, and a new listener who finds you needs a back catalogue to binge or they never return.</li>
+          <li>Cut clips as you go. By launch you should have forty short-form assets sitting ready.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div><span class="num">03</span></div>
+      <div>
+        <h3>Launch on a date that means something</h3>
+        <div class="when">Week 5 · one day, everything at once</div>
+        <ul>
+          <li>Publish three episodes simultaneously, not one. Every guest promotes on the same day, so the signal stacks instead of spreading thin.</li>
+          <li>Anchor it to a tentpole date from the calendar below. <strong>January 1 is the one the brand is literally named after.</strong></li>
+          <li>Run it hard on 990 AM the same week — promos in your own inventory, which costs you nothing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div><span class="num">04</span></div>
+      <div>
+        <h3>Flywheel</h3>
+        <div class="when">Week 6 onward · weekly</div>
+        <ul>
+          <li>One episode a week, same day, without exception. Consistency beats production value at this stage.</li>
+          <li>Now open Tier 2 and Tier 3 outreach — with published episodes, real download numbers, and named guests, the pitch is evidence instead of a promise.</li>
+          <li>Every music release becomes its own tentpole, with the artist as that week's guest.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Outreach</span>
+    <h2>Three tiers, three different jobs</h2>
+    <div class="measure">
+      <p>
+        Do not treat these the same. They convert at different rates, they want
+        different things, and mixing them up wastes the only currency you have,
+        which is Tony's and Pedro's time.
+      </p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="reach">100k+ · book 2–3 a quarter</div>
+        <h3>Tier 1 — Anchor</h3>
+        <p>Nationally known voices. Low reply rate, gatekeepers, slow. You are not booking them for their audience — you are booking them so everyone in Tier 2 says yes faster. They are social proof, not reach.</p>
+      </div>
+      <div class="card t-teal">
+        <div class="reach">10k–100k · the bulk of bookings</div>
+        <h3>Tier 2 — Core</h3>
+        <p>Journalists, musicians, academics, mid-size creators. Best ratio of reply rate to reach anywhere in the pipeline. This tier is the show. Spend most of your outreach hours here.</p>
+      </div>
+      <div class="card t-burg">
+        <div class="reach">Under 10k · volume</div>
+        <h3>Tier 3 — Community</h3>
+        <p>Micro-creators, exile-community organisers, local Miami figures. Highest reply and share rates, most engaged audiences, and genuinely delighted to be asked. The cheapest real reach you will ever buy.</p>
+      </div>
+    </div>
+    <div class="measure" style="margin-top:1.6rem">
+      <p>
+        Cadence is three touches: the invitation, a follow-up after five business
+        days, a final note a week later. Then stop and mark them no-response. A
+        fourth chase does not convert — it just costs you the relationship for
+        when you have something better to offer.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Production</span>
+    <h2>One recording, eleven assets</h2>
+    <div class="measure">
+      <p>
+        The show is not the product. The show is the raw material. If a recording
+        session produces only an episode, the session lost money.
+      </p>
+    </div>
+    <div class="engine">
+      <div class="out"><span class="qty">1</span><span class="what">Broadcast hour on 990 AM</span></div>
+      <div class="out"><span class="qty">1</span><span class="what">Podcast episode, all platforms</span></div>
+      <div class="out"><span class="qty">6</span><span class="what">Vertical clips, 30–60s</span></div>
+      <div class="out"><span class="qty">1</span><span class="what">Quote card carousel</span></div>
+      <div class="out"><span class="qty">1</span><span class="what">Newsletter to the list</span></div>
+      <div class="out"><span class="qty">1</span><span class="what">Guest asset pack, handed over</span></div>
+    </div>
+    <div class="measure" style="margin-top:1.6rem">
+      <p>
+        The clips are the growth channel — the episode is the retention channel.
+        Nobody discovers a podcast by finding a podcast. They find a
+        forty-second clip of somebody's grandmother describing Havana in 1958,
+        and then they go looking for the rest.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Calendar</span>
+    <h2>Dates that do the work for you</h2>
+    <div class="measure">
+      <p>
+        On these dates the conversation is already happening and the audience is
+        already looking. Publishing into an existing wave costs a fraction of
+        starting one.
+      </p>
+    </div>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Occasion</th><th>How to use it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="date">Jan 1</td>
+            <td>1959 — the Revolution <span class="flag">Launch here</span></td>
+            <td>The date the brand is named after. Nothing else in the year is this on-message. Reserve the biggest guest and the launch itself for it.</td>
+          </tr>
+          <tr>
+            <td class="date">Feb 24</td><td>Grito de Baire, 1895</td>
+            <td>Independence-war anniversary. Good for a historian or academic guest.</td>
+          </tr>
+          <tr>
+            <td class="date">May 20</td><td>Independence Day, 1902</td>
+            <td>The celebratory one. Pair it with a music release — this is the <em>Cuba Baila</em> date.</td>
+          </tr>
+          <tr>
+            <td class="date">Jul 11</td>
+            <td>11J protests, 2021 <span class="flag">Highest volume</span></td>
+            <td>The most active date in the contemporary conversation, and the one that reaches the youngest audience. Book an activist or a 11J participant months in advance.</td>
+          </tr>
+          <tr>
+            <td class="date">Oct 10</td><td>Grito de Yara, 1868</td>
+            <td>Start of the Ten Years' War. Origin-story episode.</td>
+          </tr>
+          <tr>
+            <td class="date">Dec 24</td><td>Nochebuena</td>
+            <td>Pure nostalgia — food, family, the table that is missing people. The most shareable emotional register of the year.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Scripts</span>
+    <h2>What to actually send</h2>
+    <div class="measure">
+      <p>
+        Short, specific, and one clear ask. The most common failure is a long
+        message that explains the whole movement and never says what it wants.
+        Replace anything <span class="script"><span class="fill">in gold</span></span>
+        with the real detail — a message that could have been sent to anyone
+        gets treated like it was.
+      </p>
+    </div>
+
+    <div class="script">
+      <div class="who">DM · first touch</div>
+      <p>Hi <span class="fill">[name]</span> — I produce a show on 990 AM in Miami about Cuba before and after '59, hosted by Tony Calatayud.</p>
+      <p>Your <span class="fill">[specific post/piece and why it stuck]</span> is exactly the conversation we want on air. Would you come on? It's 40 minutes, remote is fine, and you'll get the clips to post yourself.</p>
+      <p>Happy to send details if you're open to it.</p>
+    </div>
+
+    <div class="script">
+      <div class="who">Email · first touch</div>
+      <p><strong>Subject:</strong> 990 AM Miami — invitation to join us on air</p>
+      <p>Hi <span class="fill">[name]</span>,</p>
+      <p>I'm <span class="fill">[your name]</span>, producer for Cuba B459 on 990 AM in Miami. The show is hosted by Tony Calatayud, who has spent almost thirty years in radio and has launched twenty-four stations.</p>
+      <p>Each episode covers one guest's family story of Cuba before 1959, the work they're doing now, and what they'd tell the next generation. <span class="fill">[One sentence: why them, specifically.]</span></p>
+      <p>It's about 40 minutes, we can record remotely, and we hand you the full episode plus cut clips to use however you like.</p>
+      <p>Would <span class="fill">[two specific dates]</span> work?</p>
+      <p><span class="fill">[Name · title · station address · unsubscribe link]</span></p>
+    </div>
+
+    <div class="script">
+      <div class="who">Follow-up · five business days later</div>
+      <p>Hi <span class="fill">[name]</span> — following up on the invitation to join us on 990 AM.</p>
+      <p>Recent guests include <span class="fill">[two names]</span>. If the timing is wrong, tell me when to come back and I will.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Measurement</span>
+    <h2>Five numbers, and follower count is not one</h2>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Number</th><th>Healthy</th><th>What it tells you</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Reply rate</td><td class="date">15–30%</td><td>Whether your list is well-researched. Below 10% means you are contacting the wrong people, or the wrong address.</td></tr>
+          <tr><td>Book rate</td><td class="date">40–60% of replies</td><td>Whether the offer lands. Plenty of replies but few bookings means the pitch is unclear about what you want.</td></tr>
+          <tr><td>Guest share rate</td><td class="date">70%+</td><td><strong>The one that matters most.</strong> If guests are not posting their own episode, the assets you hand them are not good enough. Fix that before booking anyone else.</td></tr>
+          <tr><td>Clip retention</td><td class="date">50%+ at 3s</td><td>Whether your hooks work. This decides whether the algorithm shows the clip to strangers.</td></tr>
+          <tr><td>Email list growth</td><td class="date">Up, weekly</td><td>The only audience you own. Every platform above can change its rules on you overnight; the list cannot.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Guardrails</span>
+    <h2>Things that can actually bite</h2>
+
+    <div class="guard">
+      <h3>Do not scrape Instagram for emails</h3>
+      <p>It breaks Meta's terms, and bulk-mailing harvested addresses gets your sending domain flagged — right at the moment you need email reaching people. Use published business contacts: the Email button on professional accounts, link-in-bio press kits, YouTube About pages, newsroom directories. Those are addresses people put up because they want to be reached.</p>
+    </div>
+
+    <div class="guard">
+      <h3>Meta treats Cuba as a social issue</h3>
+      <p>Paid promotion touching Cuba policy needs advertiser verification and a "Paid for by" disclaimer before it will run. Verification takes days and involves ID. Start it in Phase 1 — not the week of launch.</p>
+    </div>
+
+    <div class="guard">
+      <h3>Marketing email has rules</h3>
+      <p>Any promotional email needs a real physical mailing address and a working unsubscribe, honoured within ten business days (CAN-SPAM). Use the station's address. A one-to-one booking invitation you wrote yourself is not a blast — keep it that way and the rules stay simple.</p>
+    </div>
+
+    <div class="guard">
+      <h3>Sponsored airtime needs identifying</h3>
+      <p>Anything aired on 990 AM in exchange for payment or consideration needs on-air sponsorship identification. Tony knows this territory better than anyone here — just make sure whoever books the promos does too.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">This week</span>
+    <h2>Where to start Monday</h2>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Owner</th><th>Task</th><th>Why first</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tony</td><td>List 10 people you could call today and book</td><td>Warm network beats every cold list. This alone fills Phase 2.</td></tr>
+          <tr><td>Pedro</td><td>Start Meta advertiser verification</td><td>It takes days and blocks all paid promotion until done.</td></tr>
+          <tr><td>Julio</td><td>Lock the recording setup and a weekly slot</td><td>The publish day has to be immovable before episode one.</td></tr>
+          <tr><td>Ferron</td><td>Site live on the real domain, streaming links in</td><td>Every outreach message points here. It has to exist first.</td></tr>
+          <tr><td>All</td><td>Fill 30 rows of the tracker, Tier 2 and 3</td><td>Thirty researched names is a month of outreach.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Cuba B459 · Campaign playbook · Companion to the outreach tracker.
+    Educate, create, inspire.
+  </footer>
+
+</div>

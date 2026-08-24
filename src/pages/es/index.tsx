@@ -189,8 +189,16 @@ export default function ES() {
                 <h3>Julio Rodríguez</h3>
                 <p className="card__role">Productor Ejecutivo</p>
                 <p>
-                  Responsable de la gestión del proyecto, la coordinación de
-                  producción y la unión de la visión creativa del proyecto.
+                  Julio Rodríguez es cineasta y ha formado parte de varias
+                  producciones, entre ellas los Latin Billboards, Premio Lo
+                  Nuestro, Praise the Lord, Revive y Christmas at Church, además
+                  de numerosos comerciales y encargos especiales.
+                </p>
+                <p>
+                  Se ha desplegado a zonas de Florida afectadas por desastres,
+                  documentando las experiencias de los residentes y usando
+                  plataformas de medios para difundir información urgente que
+                  salva vidas.
                 </p>
               </div>
             </div>

@@ -512,6 +512,12 @@ a:hover {
   font-size: 0.98rem;
 }
 
+/* A bio can run to more than one paragraph; the global reset strips margins,
+   so the gap has to be put back or they set solid. */
+.card p + p {
+  margin-top: 0.8rem;
+}
+
 .card__role {
   font-size: 0.72rem;
   letter-spacing: 0.18em;

@@ -188,8 +188,16 @@ export default function EN() {
                 <h3>Julio Rodríguez</h3>
                 <p className="card__role">Managing Producer</p>
                 <p>
-                  Responsible for project management, production coordination,
-                  and helping bring the creative vision of the project together.
+                  Julio Rodríguez is a filmographer who has been part of several
+                  productions including the Latin Billboards, Premio Lo Nuestro,
+                  Praise the Lord, Revive and Christmas at Church, as well as
+                  numerous commercials and special assignments.
+                </p>
+                <p>
+                  He has deployed to disaster-impacted regions of Florida,
+                  documenting the experiences of local residents and using media
+                  platforms to disseminate time-sensitive, life-saving
+                  information.
                 </p>
               </div>
             </div>

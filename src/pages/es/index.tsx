@@ -154,8 +154,8 @@ export default function ES() {
               lanzado veinticuatro emisoras y una compañía de capital de riesgo.
               También es compositor y creador de Cuba B459, un grupo de música
               latina con énfasis en el género de Liberación Cubana — el grupo
-              detrás de <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i>,{' '}
-              <i>Cuba Baila</i> y <i>Cuba Canta</i>.
+              detrás de <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i> y{' '}
+              <i>Cuba Baila, Cuba Canta</i>.
             </p>
             <p className="lede">
               B459 se lee <i>Before 59</i> — la Cuba de antes de 1959.
@@ -219,14 +219,9 @@ export default function ES() {
                 <p>Nueva música en camino.</p>
               </div>
               <div className="card card--red">
-                <h3>Cuba Baila</h3>
+                <h3>Cuba Baila, Cuba Canta</h3>
                 <p className="card__role">Próximamente</p>
-                <p>La celebración continúa.</p>
-              </div>
-              <div className="card">
-                <h3>Cuba Canta</h3>
-                <p className="card__role">Próximamente</p>
-                <p>La isla encuentra su voz.</p>
+                <p>La isla baila y canta.</p>
               </div>
             </div>
             <hr className="rule" />

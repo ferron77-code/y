@@ -152,8 +152,8 @@ export default function EN() {
               launched twenty-four stations and a venture funding company. He is
               also a songwriter and the creator of Cuba B459, a group working in
               Latin music with an emphasis on the Cuban Liberation genre — the
-              group behind <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i>,{' '}
-              <i>Cuba Baila</i> and <i>Cuba Canta</i>.
+              group behind <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i> and{' '}
+              <i>Cuba Baila, Cuba Canta</i>.
             </p>
             <p className="lede">
               B459 reads as <i>Before 59</i> — Cuba as it was before 1959.
@@ -217,14 +217,9 @@ export default function EN() {
                 <p>New music on the way.</p>
               </div>
               <div className="card card--red">
-                <h3>Cuba Baila</h3>
+                <h3>Cuba Baila, Cuba Canta</h3>
                 <p className="card__role">Coming soon</p>
-                <p>The celebration continues.</p>
-              </div>
-              <div className="card">
-                <h3>Cuba Canta</h3>
-                <p className="card__role">Coming soon</p>
-                <p>The island finds its voice.</p>
+                <p>The island dances and sings.</p>
               </div>
             </div>
             <hr className="rule" />

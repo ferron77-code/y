@@ -135,24 +135,23 @@ export default function EN() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia you can dance to.</p>
             <p className="lede">
-              Tony Calatayud is a Miami native of Cuban descent who yearns to
-              see a Cuba free from the oppressive bonds of communism. His parents
-              emigrated from Cuba in 1960, following the Cuban Revolution. He
-              grew up on his family's stories of the island before 1959 and
-              their desire to return to it soon.
+              Tony Calatayud is a Miami native of Cuban descent, who yearns to
+              see a Cuba that is free from the oppressive bonds of communism.
+              Tony's parents emigrated from Cuba in 1960, following the Cuban
+              revolution. He grew up listening to his family's stories of Cuba
+              before 1959 and their desire to return to the island soon.
+              Although his parents' generation did not see this come to pass,
+              through his music Tony desires to inspire the next generation to
+              continue the fight for Cuba's freedom.
             </p>
             <p className="lede">
-              His parents' generation did not see that come to pass. Through his
-              music, Tony means to inspire the next generation to continue the
-              fight for Cuba's freedom.
-            </p>
-            <p className="lede">
-              He is a media executive with almost thirty years in radio, having
-              launched twenty-four stations and a venture funding company. He is
-              also a songwriter and the creator of Cuba B459, a group working in
-              Latin music with an emphasis on the Cuban Liberation genre — the
-              group behind <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i> and{' '}
-              <i>Cuba Baila, Cuba Canta</i>.
+              Tony is a successful media executive with almost 30 years in the
+              radio industry. He's launched 24 radio stations and a venture
+              funding company. He is also a songwriter and creator of the
+              musical group "Cuba B4 59," focused on Latin music with an
+              emphasis on the Cuban Liberation genre. Cuba B4 59 has produced
+              vibrant songs such as "El Tiempo Ha Llegado," "El Sol de Cuba,"
+              and "Cuba Baila, Cuba Canta."
             </p>
             <p className="lede">
               B459 reads as <i>Before 59</i> — Cuba as it was before 1959.

@@ -138,22 +138,21 @@ export default function ES() {
             <p className="lede">
               Tony Calatayud nació en Miami, de ascendencia cubana, y anhela ver
               una Cuba libre de las ataduras opresivas del comunismo. Sus padres
-              emigraron de Cuba en 1960, tras la Revolución Cubana. Creció
-              escuchando las historias de su familia sobre la isla antes de 1959
-              y su deseo de volver pronto a ella.
+              emigraron de Cuba en 1960, tras la revolución cubana. Creció
+              escuchando las historias de su familia sobre la Cuba de antes de
+              1959 y su deseo de regresar pronto a la isla. Aunque la generación
+              de sus padres no llegó a verlo, a través de su música Tony busca
+              inspirar a la próxima generación a continuar la lucha por la
+              libertad de Cuba.
             </p>
             <p className="lede">
-              La generación de sus padres no llegó a verlo. A través de su
-              música, Tony busca inspirar a la próxima generación a continuar la
-              lucha por la libertad de Cuba.
-            </p>
-            <p className="lede">
-              Es un ejecutivo de medios con casi treinta años en la radio: ha
-              lanzado veinticuatro emisoras y una compañía de capital de riesgo.
-              También es compositor y creador de Cuba B459, un grupo de música
-              latina con énfasis en el género de Liberación Cubana — el grupo
-              detrás de <i>El Tiempo Ha Llegado</i>, <i>El Sol De Cuba</i> y{' '}
-              <i>Cuba Baila, Cuba Canta</i>.
+              Tony es un ejecutivo de medios con casi 30 años en la industria de
+              la radio. Ha lanzado 24 emisoras y una compañía de capital de
+              riesgo. También es compositor y creador del grupo musical «Cuba B4
+              59», enfocado en la música latina con énfasis en el género de
+              Liberación Cubana. Cuba B4 59 ha producido canciones vibrantes
+              como «El Tiempo Ha Llegado», «El Sol de Cuba» y «Cuba Baila, Cuba
+              Canta».
             </p>
             <p className="lede">
               B459 se lee <i>Before 59</i> — la Cuba de antes de 1959.

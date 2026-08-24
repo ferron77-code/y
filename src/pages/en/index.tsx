@@ -170,13 +170,13 @@ export default function EN() {
                 <p>
                   Ferron Hartshorn records as Fyaron. His music began in 1997
                   on a mission trip to Tanzania, where he recorded his first
-                  international song for radio. Ministry took him on to Italy,
-                  Canada, Vietnam and Cambodia, and to Japan, where he lived and
-                  did most of his performing. In 2010 his patriotic song
-                  "Belize, Belize" placed third in that country's national
+                  international song for radio. Outreach ministry took him on to
+                  Italy, Canada, Vietnam and Cambodia, and to Japan, where he
+                  lived and did most of his performing — carrying the Gospel
+                  through reggae, hip hop and spoken word. In 2010 his patriotic
+                  song "Belize, Belize" placed third in that country's national
                   competition, and his videos "Keep Me From Sin" and "See The
-                  Light" brought Belizean artists together across reggae, hip
-                  hop and spoken word.
+                  Light" brought Belizean artists together.
                 </p>
                 <p>
                   He now builds albums with AI — the same tools this movement

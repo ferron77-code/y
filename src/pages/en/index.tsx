@@ -181,7 +181,8 @@ export default function EN() {
                   asks a new generation of artists to pick up — and records and
                   releases other artists' work. On Cuba B459 he handles the
                   digital production: the site, the films, and everything the
-                  movement puts in front of people.
+                  movement puts in front of people. He is married with three
+                  children.
                 </p>
               </div>
               <div className="card card--teal">

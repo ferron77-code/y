@@ -182,7 +182,7 @@ export default function ES() {
                   movimiento le pide a una nueva generación de artistas — y graba
                   y publica el trabajo de otros. En Cuba B459 lleva la producción
                   digital: el sitio, las películas y todo lo que el movimiento
-                  pone frente al público.
+                  pone frente al público. Está casado y tiene tres hijos.
                 </p>
               </div>
               <div className="card card--teal">

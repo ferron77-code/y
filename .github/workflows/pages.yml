@@ -2,9 +2,12 @@ name: Deploy to GitHub Pages
 
 # A free staging URL that has no build credits to run out of. Hostinger stays
 # the production home; this is so the site can always be reviewed.
+# The github-pages environment trusts the default branch, so master is the
+# branch that actually deploys; the feature branch stays here so work in
+# progress still gets built and type-checked.
 on:
   push:
-    branches: [claude/cuba-b459-cinematic-site-1nw0cu]
+    branches: [master, claude/cuba-b459-cinematic-site-1nw0cu]
   workflow_dispatch:
 
 permissions:

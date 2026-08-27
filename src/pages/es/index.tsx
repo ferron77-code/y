@@ -83,10 +83,9 @@ export default function ES() {
             <h2 className="h1">Apoya el movimiento</h2>
             <p className="lede lede--wide">
               El Sol De Cuba es más que una canción. Es parte de un movimiento
-              cultural en crecimiento que usa la música, las historias, la
-              creatividad y la tecnología para preservar la historia, inspirar a
-              artistas y hacer que una nueva generación piense en el futuro de
-              Cuba.
+              cultural en crecimiento que usa la música, la historia, la
+              creatividad y la tecnología para inspirar artistas e impulsar una
+              nueva generación hacia el movimiento de una Cuba libre.
             </p>
           </div>
         </section>
@@ -96,20 +95,20 @@ export default function ES() {
             <p className="eyebrow">Sobre Cuba B459</p>
             <h2 className="h2">¿Qué es Cuba B459?</h2>
             <p className="lede">
-              Cuba B459 es un movimiento de base con el objetivo de educar a una
-              nueva generación sobre la vida en Cuba antes de la Revolución
-              Cubana, según los relatos de sobrevivientes del exilio cubano;
-              inspirar a nuevos artistas a avanzar el género de Liberación Cubana
-              usando tecnología de IA; y motivar a los jóvenes a buscar cambios
-              políticos, económicos y sociales en Cuba.
+              Cuba B459 es un movimiento no político con el objetivo de educar a
+              una nueva generación sobre la vida en Cuba antes de la Revolución,
+              según los relatos de sobrevivientes del exilio Cubano; inspirar
+              nuevos artistas que avancen el género musical de Liberación Cubana
+              usando el medio tecnológico de IA; y motivar la juventud que luchen
+              por cambios políticos, económicos y sociales en Cuba.
             </p>
 
             <div className="grid-3">
               <div className="card">
                 <h3>Recordar</h3>
                 <p>
-                  Preservar y compartir las historias y experiencias de primera
-                  mano de la vida en Cuba antes de la Revolución.
+                  Compartir las historias y experiencias de primera mano de la
+                  vida en Cuba antes de la Revolución.
                 </p>
               </div>
               <div className="card card--teal">
@@ -136,23 +135,24 @@ export default function ES() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia que se puede bailar.</p>
             <p className="lede">
-              Tony Calatayud nació en Miami, de ascendencia cubana, y anhela ver
+              Tony Calatayud nacido en Miami, de ascendencia cubana, y anhela ver
               una Cuba libre de las ataduras opresivas del comunismo. Sus padres
-              emigraron de Cuba en 1960, tras la revolución cubana. Creció
-              escuchando las historias de su familia sobre la Cuba de antes de
-              1959 y su deseo de regresar pronto a la isla. Aunque la generación
-              de sus padres no llegó a verlo, a través de su música Tony busca
+              emigraron a Miami en el 1960, tras la persecución a su familia y
+              los opositores del socialismo por el gobierno Cubano. Tony creció
+              escuchando las historias que su familia relataba sobre Cuba de
+              antes de 1959 y su deseo de regresar pronto a la isla. Aunque la
+              generación de sus padres no ha podido regresar, su meta es
               inspirar a la próxima generación a continuar la lucha por la
-              libertad de Cuba.
+              libertad de Cuba a través de su música.
             </p>
             <p className="lede">
               Tony es un ejecutivo de medios con casi 30 años en la industria de
               la radio. Ha lanzado 24 emisoras y una compañía de capital de
-              riesgo. También es compositor y creador del grupo musical «Cuba
-              B459», enfocado en la música latina con énfasis en el género de
-              Liberación Cubana. Cuba B459 ha producido canciones vibrantes
-              como «El Tiempo Ha Llegado», «El Sol de Cuba» y «Cuba Baila, Cuba
-              Canta».
+              riesgo. Es compositor y creador del grupo musical Cuba B459,
+              enfocado en la música latina con énfasis en el género de
+              Liberación Cubana. Cuba B459 ha producido canciones vibrantes como{' '}
+              <i>El Tiempo Ha Llegado</i>, <i>El Sol de Cuba</i> y{' '}
+              <i>Cuba Baila, Cuba Canta</i>.
             </p>
             <p className="lede">
               B459 se lee <i>Before 59</i> — la Cuba de antes de 1959.
@@ -169,16 +169,17 @@ export default function ES() {
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Productor Digital</p>
                 <p>
-                  Ferron Hartshorn graba bajo el nombre de Fyaron. Su música
-                  comenzó en 1997 en un viaje misionero a Tanzania, donde grabó
-                  su primera canción internacional para la radio. El ministerio
-                  de alcance lo llevó después a Italia, Canadá, Vietnam y
-                  Camboya, y a Japón, donde vivió e hizo la mayor parte de sus
-                  presentaciones, llevando el Evangelio a través del reggae, el
-                  hip hop y la palabra hablada. En 2010 su canción patriótica
-                  «Belize, Belize» quedó en tercer lugar en el concurso nacional
-                  de ese país, y sus videos «Keep Me From Sin» y «See The Light»
-                  reunieron a artistas beliceños.
+                  Ferron Hartshorn es compositor de música digital bajo el
+                  nombre de «Fyaron». Su música comenzó en 1997 en un viaje
+                  misionero a Tanzania donde grabó su primera canción
+                  internacional para la radio. El ministerio de alcance lo llevó
+                  a Italia, el Canadá, Vietnam, Camboya, y al Japón donde vivió
+                  y llevó el Evangelio a través de los géneros del reggae, hip
+                  hop y el canto hablado. En 2010 su canción patriótica{' '}
+                  <i>Belize, Belize</i> tomó el tercer lugar en el concurso
+                  nacional de música de su país. Sus videos musicales{' '}
+                  <i>Keep Me From Sin</i> y <i>See The Light</i> vieron
+                  colaboraciones con varios artistas beliceños.
                 </p>
                 <p>
                   Hoy crea álbumes con IA — las mismas herramientas que este
@@ -204,15 +205,16 @@ export default function ES() {
                 <p className="card__role">Productor Ejecutivo</p>
                 <p>
                   Julio Rodríguez es cineasta y ha formado parte de varias
-                  producciones, entre ellas los Latin Billboards, Premio Lo
-                  Nuestro, Praise the Lord, Revive y Christmas at Church, además
-                  de numerosos comerciales y encargos especiales.
+                  producciones entre ellas los Latin Billboards, Premio Lo
+                  Nuestro, <i>Praise the Lord</i>, <i>Revive</i> y{' '}
+                  <i>Christmas at Church</i>. Además, ha sido parte de numerosos
+                  comerciales de televisión y producciones independientes.
                 </p>
                 <p>
-                  Se ha desplegado a zonas de Florida afectadas por desastres,
-                  documentando las experiencias de los residentes y usando
-                  plataformas de medios para difundir información urgente que
-                  salva vidas.
+                  Julio ha sido desplegado a zonas de la Florida afectadas por
+                  desastres, documentando las experiencias de los residentes y
+                  usando plataformas de medios digital para difundir información
+                  urgente que salva vidas.
                 </p>
               </div>
             </div>
@@ -224,8 +226,8 @@ export default function ES() {
             <p className="eyebrow">El catálogo</p>
             <h2 className="h2">Las canciones</h2>
             <p className="lede">
-              La música de El Sol De Cuba trae la historia, la cultura, la lucha,
-              la esperanza y el espíritu de Cuba a una nueva generación.
+              La música trae la historia, la cultura, la lucha, la esperanza y
+              el espíritu de Cuba a una nueva generación.
             </p>
             <div className="grid-3">
               <a className="card card--link" href="#cancion">
@@ -235,12 +237,12 @@ export default function ES() {
               </a>
               <div className="card card--teal">
                 <h3>El Tiempo Ha Llegado</h3>
-                <p className="card__role">Próximamente</p>
+                <p className="card__role">Viene Pronto</p>
                 <p>Nueva música en camino.</p>
               </div>
               <div className="card card--red">
                 <h3>Cuba Baila, Cuba Canta</h3>
-                <p className="card__role">Próximamente</p>
+                <p className="card__role">Viene Pronto</p>
                 <p>La isla baila y canta.</p>
               </div>
             </div>

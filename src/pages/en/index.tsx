@@ -84,9 +84,9 @@ export default function EN() {
             <h2 className="h1">Support the movement</h2>
             <p className="lede lede--wide">
               El Sol De Cuba is more than a song. It is part of a growing
-              cultural movement using music, storytelling, creativity, and
-              technology to preserve history, inspire artists, and encourage a
-              new generation to think about Cuba's future.
+              cultural movement using music, history, creativity and technology
+              to inspire artists and carry a new generation toward the movement
+              for a free Cuba.
             </p>
           </div>
         </section>
@@ -96,19 +96,20 @@ export default function EN() {
             <p className="eyebrow">About Cuba B459</p>
             <h2 className="h2">What is Cuba B459?</h2>
             <p className="lede">
-              Cuba B459 is a grassroots movement with the goal of educating a new
-              generation on life in Cuba before the Cuban Revolution as told by
-              survivors of the Cuban exile, inspire new artists to advance the
-              Cuban Liberation genre using AI technology, and motivate young
-              people to seek political, economic, and social change in Cuba.
+              Cuba B459 is a non-political movement with the goal of educating a
+              new generation on life in Cuba before the Revolution, as told by
+              survivors of the Cuban exile; inspiring new artists to advance the
+              Cuban Liberation musical genre using AI technology; and motivating
+              young people to fight for political, economic and social change in
+              Cuba.
             </p>
 
             <div className="grid-3">
               <div className="card">
                 <h3>Remember</h3>
                 <p>
-                  Preserve and share firsthand stories and experiences of life in
-                  Cuba before the Revolution.
+                  Share firsthand stories and experiences of life in Cuba before
+                  the Revolution.
                 </p>
               </div>
               <div className="card card--teal">
@@ -135,23 +136,24 @@ export default function EN() {
             <h2 className="h2">Tony Calatayud</h2>
             <p className="pull">Nostalgia you can dance to.</p>
             <p className="lede">
-              Tony Calatayud is a Miami native of Cuban descent, who yearns to
-              see a Cuba that is free from the oppressive bonds of communism.
-              Tony's parents emigrated from Cuba in 1960, following the Cuban
-              revolution. He grew up listening to his family's stories of Cuba
-              before 1959 and their desire to return to the island soon.
-              Although his parents' generation did not see this come to pass,
-              through his music Tony desires to inspire the next generation to
-              continue the fight for Cuba's freedom.
+              Tony Calatayud was born in Miami, of Cuban descent, and yearns to
+              see a Cuba free from the oppressive bonds of communism. His parents
+              emigrated to Miami in 1960, after the Cuban government's
+              persecution of his family and of those who opposed socialism. Tony
+              grew up listening to the stories his family told of Cuba before
+              1959 and their wish to return to the island soon. His parents'
+              generation has not been able to return; his aim is to inspire the
+              next generation to carry on the fight for Cuba's freedom through
+              his music.
             </p>
             <p className="lede">
-              Tony is a successful media executive with almost 30 years in the
-              radio industry. He's launched 24 radio stations and a venture
-              funding company. He is also a songwriter and creator of the
-              musical group "Cuba B459," focused on Latin music with an
-              emphasis on the Cuban Liberation genre. Cuba B459 has produced
-              vibrant songs such as "El Tiempo Ha Llegado," "El Sol de Cuba,"
-              and "Cuba Baila, Cuba Canta."
+              Tony is a media executive with almost 30 years in the radio
+              industry. He's launched 24 radio stations and a venture funding
+              company. He is a songwriter and creator of the musical group Cuba
+              B459, focused on Latin music with an emphasis on the Cuban
+              Liberation genre. Cuba B459 has produced vibrant songs such as{' '}
+              <i>El Tiempo Ha Llegado</i>, <i>El Sol de Cuba</i> and{' '}
+              <i>Cuba Baila, Cuba Canta</i>.
             </p>
             <p className="lede">
               B459 reads as <i>Before 59</i> — Cuba as it was before 1959.
@@ -168,15 +170,16 @@ export default function EN() {
                 <h3>Ferron Hartshorn</h3>
                 <p className="card__role">Digital Producer</p>
                 <p>
-                  Ferron Hartshorn records as Fyaron. His music began in 1997
-                  on a mission trip to Tanzania, where he recorded his first
-                  international song for radio. Outreach ministry took him on to
-                  Italy, Canada, Vietnam and Cambodia, and to Japan, where he
-                  lived and did most of his performing — carrying the Gospel
-                  through reggae, hip hop and spoken word. In 2010 his patriotic
-                  song "Belize, Belize" placed third in that country's national
-                  competition, and his videos "Keep Me From Sin" and "See The
-                  Light" brought Belizean artists together.
+                  Ferron Hartshorn is a digital music composer under the name
+                  "Fyaron." His music began in 1997 on a mission trip to Tanzania
+                  where he recorded his first international song for radio.
+                  Outreach ministry took him to Italy, Canada, Vietnam, Cambodia
+                  and Japan, where he lived and carried the Gospel through
+                  reggae, hip hop and spoken word. In 2010 his patriotic song{' '}
+                  <i>Belize, Belize</i> took third place in his country's
+                  national music competition. His music videos{' '}
+                  <i>Keep Me From Sin</i> and <i>See The Light</i> saw
+                  collaborations with several Belizean artists.
                 </p>
                 <p>
                   He now builds albums with AI — the same tools this movement
@@ -203,9 +206,10 @@ export default function EN() {
                 <p className="card__role">Managing Producer</p>
                 <p>
                   Julio Rodríguez is a filmographer who has been part of several
-                  productions including the Latin Billboards, Premio Lo Nuestro,
-                  Praise the Lord, Revive and Christmas at Church, as well as
-                  numerous commercials and special assignments.
+                  productions including the Latin Billboards, Premio Lo Nuestro,{' '}
+                  <i>Praise the Lord</i>, <i>Revive</i> and{' '}
+                  <i>Christmas at Church</i>. He has also worked on numerous
+                  television commercials and independent productions.
                 </p>
                 <p>
                   He has deployed to disaster-impacted regions of Florida,
@@ -223,8 +227,8 @@ export default function EN() {
             <p className="eyebrow">The catalogue</p>
             <h2 className="h2">Las Canciones</h2>
             <p className="lede">
-              The music of El Sol De Cuba brings the history, culture, struggle,
-              hope, and spirit of Cuba into a new generation.
+              The music brings the history, culture, struggle, hope and spirit
+              of Cuba into a new generation.
             </p>
             <div className="grid-3">
               <a className="card card--link" href="#song">

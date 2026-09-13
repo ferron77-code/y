@@ -304,7 +304,7 @@ export default function ES() {
             </p>
             <div className="player">
               <iframe
-                src="https://www.youtube-nocookie.com/embed/xE6l2sSSAyw"
+                src="https://www.youtube-nocookie.com/embed/Qs17CVQSUAk"
                 title="El Sol De Cuba"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -312,7 +312,7 @@ export default function ES() {
               />
             </div>
             <div className="actions">
-              <a className="btn" href="https://youtu.be/xE6l2sSSAyw" target="_blank" rel="noopener noreferrer">
+              <a className="btn" href="https://youtu.be/Qs17CVQSUAk" target="_blank" rel="noopener noreferrer">
                 Ver en YouTube
               </a>
               <a className="btn btn--ghost" href="https://www.youtube.com/@CubaB459" target="_blank" rel="noopener noreferrer">
